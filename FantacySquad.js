@@ -1,7 +1,7 @@
 var axios  =  require('axios');
 const port = 8080;
 const id = "dd5dcdcd-f09b-4a44-a50e-12f52d9d3d8c";
-const apikey = "da2589ff-76cf-4b11-8654-080868ac896b";
+const apikey = "%APIKEY%";
 axios.get(`https://api.cricapi.com/v1/match_squad?apikey=${apikey}&offset=0&id=${id}`)
 .then((result)=>{
     var data = result.data.data;
