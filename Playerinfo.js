@@ -1,7 +1,7 @@
 var axios  =  require('axios');
 const port = 8080;
 const id = "77da5a6d-7c67-4a76-9d24-709ba6e5e1d8";
-const apikey = "da2589ff-76cf-4b11-8654-080868ac896b";
+const apikey = "%APIKEY%";
 axios.get(`https://api.cricapi.com/v1/players_info?apikey=${apikey}&offset=0&id=${id}`)
 .then((result)=>{
     var data = result.data.data;
