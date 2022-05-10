@@ -4,7 +4,6 @@ const id = "dd5dcdcd-f09b-4a44-a50e-12f52d9d3d8c";
 const apikey = "%APIKEY%";
 axios.get(`https://api.cricapi.com/v1/match_points?apikey=${apikey}&offset=0&id=${id}`)
 .then((result)=>{
-    console.log(result.data.data);
     var data = result.data.data;
     var innings = data.innings;
     console.log("Match Point..............................................");
