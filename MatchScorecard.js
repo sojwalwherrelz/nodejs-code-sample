@@ -1,6 +1,6 @@
 var axios  =  require('axios');
 const port = 8080;
-const apikey = "da2589ff-76cf-4b11-8654-080868ac896b";
+const apikey = "%APIKEY%";
 const id   = "fc4a5881-fb19-4d21-933c-45e913dc0d3c"
 
 axios.get(`https://api.cricapi.com/v1/match_scorecard?apikey=${apikey}&offset=0&id=${id}`)
